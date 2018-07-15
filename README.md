@@ -8,5 +8,8 @@ The objective of this study is to collect user comments and reviews straight fro
 
 The business problem this project aims to identify is such: what is the user sentiment who are using these two products in their daily life. Also, what are some of the meanings behind the reviews and what impact those latent meanings might have in the future of these products. Both the brands producing these phones can learn from this analysis the most important aspects that users love and hate about the phones. Thus this project can help the companies improve their products as well as sale and user satisfaction by gaining knowledge from the user sentiment available in the internet. 
 
+## Data Source
+The data for this project has been collected from various sources. All the reviews of iPhone-8 have been collected from Twitter API. Twitter offers an API by which anyone can collect tweets with API keys. The collection of the tweets for iPhone-8 was filtered by the string “iPhone 8” and only the tweets written in English were collected. The tweets were collected in the file “8.txt” for a period of 10-12 hours and the initial file size of tweets was 10MB. Later only the texts and country information of the tweets were saved to another file for further analysis. This part of the project is done in Python using popular Python libraries as needed. 
+In the next page, a plot is shown on the origin of the tweets. The countries from which people tweeted most about iPhone-8 are visualized. This information was also gathered from the ‘country’ attribute collected through Twitter API. 
 
 
