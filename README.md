@@ -46,7 +46,7 @@ After the above-mentioned processes, the corpus is converted into a term-documen
 
 Next the frequencies of each word out of whole corpus is calculated and the top 50 most frequent words are visualized in a word-cloud plot. 
 
-![iphone_top](https://user-images.githubusercontent.com/5343403/42731359-cc74df24-87d0-11e8-809a-d4cb0e4ab970.png)
+![iphone_top](https://user-images.githubusercontent.com/5343403/42731397-11663f1e-87d2-11e8-8415-35badef8bce9.png)
 
 From the above plot we can see that the top words for iPhone-8 includes words like Samsung and Galaxy, indicating that the competitive Samsung product is mentioned several times in the tweets. Also, we can see the words amp, charger, protector, screen, power which indicate the tweets are mostly about charging and screen protectors for the phone. 
 
@@ -54,5 +54,49 @@ Next the positive and negative words are identified from the tweets using the po
 
 Next the positive, negative and neutral words are visualized to understand the sentiments of the reviewers. Frist, we will analyse the meaning behind the positive words:
 
+![8_pos](https://user-images.githubusercontent.com/5343403/42731405-417ca2b0-87d2-11e8-81b9-bf953c85ba00.png)
 
+From the top 50 positive words identified from the positive-word dictionary we can see that the words “win”, ”giveaway”, ”deal/deals”, ”freebies”, “free” are mostly talked about in the reviewers. These words indicate that the positive tweets were about various deals offered by different sites for the phones. This can be a strong indication that the price range of the phone is so high that most of the positive/happy tweets are from users who got a good deal or interested to free giveaways happening on the iPhones. 
+
+![8_neg](https://user-images.githubusercontent.com/5343403/42731417-605a47e6-87d2-11e8-9892-d4d551b2265c.png)
+
+Next in the word-cloud of negative words we see that the word “Galaxy” is the most frequent with “Samsung” the second most frequent word in the list. These two words indicate that the users were not happy with the iPhones and comparing the iPhone-8 with Samsung Galaxy phones, which are the main competitors of iPhone in the market. Also, there are several other negative words like “goodbye”, “issue”, “change”, “sad” indicating that the users are talking about switching brands from iPhone to other phones, possibly Samsung Galaxy phone considering the frequency of the words “Samsung” and “Galaxy”. 
+
+![8_neu](https://user-images.githubusercontent.com/5343403/42731420-7a1956ea-87d2-11e8-9669-3187a2580d9d.png)
+
+Next in the neutral word cloud we can see the words “Samsung”, “Galaxy”, “android” indicating that the reviewers might have neutrally comparing the iPhone with Android phones.
+
+Next, the sentiment analysis on the Samsung Galaxy S8 phone has been discussed:
+
+## Samsung Galaxy S8:
+The pre-processing part of the tweets for Samsung phone are same as iPhones. As well as the parts of creating term-document matrix and identifying most frequent words. The self-stop words identified for this case are: "Samsung", "galaxy", "plus", "phone", "got", "get", "new", "anonymous", "phones", "just", "can".
+
+![s9_top](https://user-images.githubusercontent.com/5343403/42731429-ced5954a-87d2-11e8-9e6d-c017f60f82fa.png)
+
+Above is the word-cloud for top 50 most frequent words found in the user reviews about Samsung Galaxy S8 phones. Again, here the most frequent word is “iPhone” and “Apple” indicating reviewers are comparing the Samsung galaxy phone with iPhones. Also, the words “edge”, “Note” indicates the Galaxy phones are compared to other Samsung phones from Edge and Note series. Also, the words “Great”, “Best”, “Love” indicates the reviewers are loving the Galaxy phone. The words “camera”, “photos” indicate one of the most popular features of the Galaxy phones which is good picture quality. 
+
+Next the positive, negative and neutral words are identified from the dictionaries and analysed for Samsung Galaxy S8 reviews:
+
+![s9_pos](https://user-images.githubusercontent.com/5343403/42731451-2b2a6370-87d3-11e8-8873-164b0cdfdb64.png)
+
+The top mentioned positve words in this case are camera, screen, quality, fast, ram, price, design, apps, indicating reviewers love these features from the Samsung Galaxy S8 phones. Again the words apple and iphone are seen, which means the comparison between iPhone and Galaxy phone is very popular among the users.
+
+![s9_neg](https://user-images.githubusercontent.com/5343403/42731457-4922e12c-87d3-11e8-9406-2255ee49b885.png)
+
+In the negative reviews there is not much words that can give intuitions about negative user sentiment. However, the words “battery”, “lagging” indicates most of the negative reviews are about smaller battery life and slow speed of the phone.  
+
+![s9_neu](https://user-images.githubusercontent.com/5343403/42731463-6fc65cb4-87d3-11e8-8520-66a2c15eee4c.png)
+
+The neutral reviews also don’t give much intuition about the user sentiment on the Galaxy phones. However the word “Oneplus” is indicating that people are talking about another popular android phone brand that is a major competitor for the samsung phones in Android market. So the business team of Samsung can compare public sentiment on oneplus phones in future to better understand user demand on android phones. 
+
+## Results & Conclusion:
+In this project user reviews were collected directly from Twitter and other sites that sell the phones to identify public sentiment on two of the most popular phones at this time. The reviews were collected randomly to prevent any bias from the user side. However, one observation should be mentioned about the source of the data which is reviews collected directly from selling sites (like Amazon or eBay) are more specific and intuitive than tweets collected from Twitter where.  
+
+In the sentiment analysis part of the comparison we have looked at the top mentioned words as well as the positive, negative and neutral words about both the iPhone 8 and Samsung Galaxy S8 phones. The most common factor found after the sentiment analysis is that users are very prone to compare models that come with similar features. So, knowing about pros and cons of the other features can help the individual brands to grow. 
+
+For iPhone, the conclusion after sentiment analysis can be drawn as such: the price range of these phones are a big factor and people are looking for deals and giveaways to buy iPhone. Also, the negative reviews indicate that the Samsung Galaxy phones are mentioned the most along with people talking about changing or switching brand. So, this can be a warning for the brand that Samsung Galaxy phones are a major setback for their market share. 
+
+The sentiment on Samsung Galaxy S8 is mostly about the camera, photos, lagging and battery life. While in the positive reviews, users talk about the design of the phone, ram, speed and camera, in the negative reviews users are complaining about lagging and smaller battery life. So necessary steps should be taken by the brand to improve the user sentiment. 
+
+However, some of the major issues that can be identified from the user reviews by a human are absent in the results of the analysis. For example, both the phones are known for having screens that are broken very easily. While the top words in the analysis consists, words like “protector”, “case”,” screen”, they do not give us any specific intuition about the user sentiment behind using these words in the reviews. But this analysis only indicates the fact that sentiment analysis is not yet perfect and human intuition is needed the most in this area for accurate identification. 
 
