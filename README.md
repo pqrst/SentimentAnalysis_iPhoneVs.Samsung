@@ -13,6 +13,7 @@ The data for this project has been collected from various sources. All the revie
 In the next page, a plot is shown on the origin of the tweets. The countries from which people tweeted most about iPhone-8 are visualized. This information was also gathered from the ‘country’ attribute collected through Twitter API. 
 
 ![8_country](https://user-images.githubusercontent.com/5343403/42731294-9e7f47b8-87cf-11e8-8393-b0a31420528e.png)
+
 The above plot shows the countries of the reviewers whose tweets about iPhone-8 was collected. The plot confirms the notion that iPhones are most popular in United States. 
 
 The next dataset was collected about Samsung Galaxy S8 phones through the Twitter API. Unfortunately, finding English tweets about the Samsung Galaxy S8 was not as smooth as the collecting tweets about iPhone. One possible reason behind the situation can be Twitter is more popular in the United States where iPhones are very popular. 
@@ -20,6 +21,7 @@ The next dataset was collected about Samsung Galaxy S8 phones through the Twitte
 After a span of about 24 hours the number of tweets collected in “s9.txt” file was very small with a size of only 2MB. Thus, more reviews of users were collected by web scraping. User reviews from Amazon (around 370 product reviews) and Gsmarena (around 140 product reviews) were collected through this process.  All the tweets and reviews were then combined into a csv file (tweets_s9.csv) for further analysis with sentiment analysis. The web scraping and tweet collection process part of the project is done in Python using popular Python libraries as needed. 
 
 ![s9_country](https://user-images.githubusercontent.com/5343403/42731310-0d4d4424-87d0-11e8-9c40-8cb143972555.png)
+
 The above plot generated from tweets shows that unlike iPhone 8, tweets about Galaxy S8 are low from United States. Rather this graph tells us that Samsung Galaxy phones are more popular in European countries. However, since tweets written only in English are collected for this study, it is evident that this plot is not showing the full scenario about the popularity of Samsung Galaxy S8 phone in Europe. Since the first language of most of the European countries is not English. 
 
 ## Algorithm:
@@ -29,6 +31,7 @@ Sentiment analysis will be done on the user reviews to understand public sentime
 For sentiment analysis, the most frequent words are identified first to understand what are the popular topics the users are reviewing about these phones. Next with positive and negative word dictionaries, the words from the text files are matched to find the positive, neutral and negative words. The words are identified with the sentiment score formula, which is:
 
 ![senti_score](https://user-images.githubusercontent.com/5343403/42731323-479c5b9c-87d0-11e8-9112-35f34811e1a1.PNG)
+
 If the score is greater than 0, then the word is identified as positive, if the score is equal to 0 then neutral and negative otherwise.
 After identifying the positive, negative and neutral words, the intuition behind each group of words is analysed based on popular ideas about the products.  
 
@@ -42,7 +45,9 @@ After saving the tweets in a csv file (tweets_8.txt) from a Python Pandas data f
 After the above-mentioned processes, the corpus is converted into a term-document matrix which computes the term frequencies of each word in each corpus document. Next the term-document matrix is written in a csv file named “tdm_8.csv”. 
 
 Next the frequencies of each word out of whole corpus is calculated and the top 50 most frequent words are visualized in a word-cloud plot. 
+
 ![iphone_top](https://user-images.githubusercontent.com/5343403/42731359-cc74df24-87d0-11e8-809a-d4cb0e4ab970.png)
+
 From the above plot we can see that the top words for iPhone-8 includes words like Samsung and Galaxy, indicating that the competitive Samsung product is mentioned several times in the tweets. Also, we can see the words amp, charger, protector, screen, power which indicate the tweets are mostly about charging and screen protectors for the phone. 
 
 Next the positive and negative words are identified from the tweets using the positive word and negative word dictionary. The words that match with the positive word dictionary are saved in a csv file. This process is done by generating a score for each word defining if the word is positive or not. Likewise, the negative words are identified by the same process and saved for further analysis. Also, the words that don’t fall in any of the categories are identified as neutral words. 
